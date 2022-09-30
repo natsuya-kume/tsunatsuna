@@ -5,14 +5,12 @@ import Nav from "@/components/layouts/nav/Nav";
 
 const Header = () => {
   return (
-    <header>
-      <Container large>
-        <div className={styles.flexContainer}>
-          <Logo boxOn />
-          <Nav />
-        </div>
-      </Container>
-    </header>
+    <Container large>
+      <div className={styles.flexContainer}>
+        <Logo boxOn />
+        <Nav />
+      </div>
+    </Container>
   );
 };
 export default Header;
