@@ -12,14 +12,14 @@ const Footer = () => {
           <div className={styles.socialIconContainer}>
             <Link href="https://twitter.com/natsuya_IT">
               {/* This fragment is necessary to hide Next.js bug error */}
-              <>
+              <div>
                 <TwitterIcon style={styles.socialIcon} />
-              </>
+              </div>
             </Link>
             <Link href="https://github.com/natsuya-kume">
-              <>
+              <div>
                 <GithubIcon style={styles.socialIcon} />
-              </>
+              </div>
             </Link>
           </div>
           <div>
