@@ -1,0 +1,41 @@
+.flexContainer {
+  composes: sideBySideCenter from "@/styles/utils.module.css";
+}
+
+.profileTitleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  padding-top: calc(var(--display) * 0.5);
+  padding-bottom: calc(var(--display) * 0.7);
+}
+
+.title {
+  font-size: var(--heading2);
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  color: var(--main-title);
+  display: flex;
+}
+
+.subtitle {
+  font-size: var(--heading3);
+  color: var(--base-text);
+}
+
+.typeText {
+  font-size: var(--heading2);
+  color: var(--base-text);
+  font-weight: 500;
+}
+.skillsContainer {
+  composes: center from "@/styles/utils.module.css";
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skillContainer {
+  display: flex;
+}
