@@ -16,14 +16,14 @@ const SelfIntroduction: React.FC<Props> = ({ title, subtitle }) => {
         </div>
         <p className={styles.subtitle}>{subtitle}</p>
       </div>
-      <div>
-        <h1 className={styles.subtitle}>Age : 23</h1>
-        <h1 className={styles.subtitle}>Occupation : Frontend Engineer</h1>
-        <h1 className={styles.subtitle}>Birthplace : Wakayama</h1>
-        <h1 className={styles.subtitle}>Address : Tokyo</h1>
-        <h1 className={styles.subtitle}>
+      <div className={styles.text}>
+        <p className={styles.subtitle}>Age : 23</p>
+        <p className={styles.subtitle}>Occupation : Frontend Engineer</p>
+        <p className={styles.subtitle}>Birthplace : Wakayama</p>
+        <p className={styles.subtitle}>Address : Tokyo</p>
+        <p className={styles.subtitle}>
           Hobby : Soccer / Guitar / Interior / Fassion
-        </h1>
+        </p>
       </div>
     </div>
   );

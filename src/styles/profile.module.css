@@ -30,12 +30,21 @@
   color: var(--base-text);
   font-weight: 500;
 }
+.skillText {
+  font-size: var(--heading3);
+  color: var(--base-text);
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
 .skillsContainer {
-  composes: center from "@/styles/utils.module.css";
-  flex-direction: column;
-  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 .skillContainer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }

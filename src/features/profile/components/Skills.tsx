@@ -17,48 +17,63 @@ const Skills = () => {
       <div className={styles.skillsContainer}>
         <div className={styles.skillContainer}>
           <HtmlIcon />
-          {/* TODO: starライブラリ探す */}
-          <h1 className={styles.subtitle}>HTML5 : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>HTML5</p>
+          <p className={styles.skillText}>2 years</p>
         </div>
         <div className={styles.skillContainer}>
           <CssIcon />
-          <h1 className={styles.subtitle}>CSS3 : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>CSS3</p>
+          <p className={styles.skillText}>2 years</p>
         </div>
         <div className={styles.skillContainer}>
           <SassIcon />
-          <h1 className={styles.subtitle}>SASS : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>SASS</p>
+          <p className={styles.skillText}>1 years</p>
         </div>
         <div className={styles.skillContainer}>
           <MaterialUiIcon />
-          <h1 className={styles.subtitle}>MUI : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>MUI</p>
+          <p className={styles.skillText}>1 years</p>
         </div>
         <div className={styles.skillContainer}>
           <JavaScriptIcon />
-          <h1 className={styles.subtitle}>JavaScript : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>JavaScript</p>
+          <p className={styles.skillText}>2 years</p>
         </div>
         <div className={styles.skillContainer}>
           <TypeScriptIcon />
-          <h1 className={styles.subtitle}>TypeSctipt : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>TypeScript</p>
+          <p className={styles.skillText}>1 years</p>
         </div>
         <div className={styles.skillContainer}>
           <ReactIcon />
-          <h1 className={styles.subtitle}>React(React Native) : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>React</p>
+          <p className={styles.skillText}>2 years</p>
+        </div>
+        <div className={styles.skillContainer}>
+          <ReactIcon />
+          <p className={styles.skillText}>React Native</p>
+          <p className={styles.skillText}>2 years</p>
         </div>
         <div className={styles.skillContainer}>
           <ReduxIcon />
-          <h1 className={styles.subtitle}>Redux : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>Redux</p>
+          <p className={styles.skillText}>1 years</p>
         </div>
         <div className={styles.skillContainer}>
           <GraphQLIcon />
-          <h1 className={styles.subtitle}>GraphQL : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>GraphQL</p>
+          <p className={styles.skillText}>1 month</p>
         </div>
         <div className={styles.skillContainer}>
           <PythoniIcon />
-          <h1 className={styles.subtitle}>Python : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>Python </p>
+          <p className={styles.skillText}>1 month</p>
         </div>
         <div className={styles.skillContainer}>
           <GolangIcon />
-          <h1 className={styles.subtitle}>Golang : ⭐️⭐️⭐️</h1>
+          <p className={styles.skillText}>Golang</p>
+          <p className={styles.skillText}>1 day</p>
         </div>
       </div>
     </>
