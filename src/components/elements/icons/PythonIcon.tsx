@@ -1,6 +1,6 @@
 import React from "react";
 
-const PythoniIcon = React.memo(() => {
+const PythonIcon = React.memo(() => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -22,4 +22,4 @@ const PythoniIcon = React.memo(() => {
   );
 });
 
-export default PythoniIcon;
+export default PythonIcon;

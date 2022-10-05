@@ -5,15 +5,16 @@ import GraphQLIcon from "@/components/elements/icons/GraphQLIcon";
 import HtmlIcon from "@/components/elements/icons/HtmlIcon";
 import JavaScriptIcon from "@/components/elements/icons/JavaScriptIcon";
 import MaterialUiIcon from "@/components/elements/icons/MaterialUiIcon";
-import PythoniIcon from "@/components/elements/icons/PythonIcon";
+import PythonIcon from "@/components/elements/icons/PythonIcon";
 import ReactIcon from "@/components/elements/icons/ReactIcon";
 import SassIcon from "@/components/elements/icons/SassIcon";
 import TypeScriptIcon from "@/components/elements/icons/TypeScriptIcon";
 import ReduxIcon from "@/components/elements/icons/ReduxIcon";
+
 const Skills = () => {
   return (
     <>
-      <h1 className={styles.title}>Skills</h1>
+      <h1 className={styles.title}>Experience</h1>
       <div className={styles.skillsContainer}>
         <div className={styles.skillContainer}>
           <HtmlIcon />
@@ -66,7 +67,7 @@ const Skills = () => {
           <p className={styles.skillText}>1 month</p>
         </div>
         <div className={styles.skillContainer}>
-          <PythoniIcon />
+          <PythonIcon />
           <p className={styles.skillText}>Python </p>
           <p className={styles.skillText}>1 month</p>
         </div>
