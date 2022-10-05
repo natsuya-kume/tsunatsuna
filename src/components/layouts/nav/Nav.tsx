@@ -21,7 +21,7 @@ const Nav = () => {
           />
         </div>
       </Link>
-      <Link href="/profile">
+      <Link href={pagesPath.profile.$url()}>
         <div>
           <ProfileIcon
             navListStyle={styles.navList}
