@@ -7,7 +7,11 @@
     "dev:next": "next dev",
     "dev:path": "yarn path -w",
     "build": "yarn path && next build",
-    "path": "pathpida -o ./src/lib"
+    "path": "pathpida -o ./src/lib",
+    "format": "prettier --check ./src",
+    "format:fix": "yarn prettier --write ./src",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "flat-color-icons": "^1.1.0",

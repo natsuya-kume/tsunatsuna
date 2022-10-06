@@ -1,10 +1,11 @@
-import Skills from "@/features/profile/components/Skills";
-import SelfIntroduction from "./SelfIntroduction";
+import SelfIntroduction from './SelfIntroduction'
+
+import Skills from '@/features/profile/components/Skills'
 
 type Props = {
-  title: string;
-  subtitle: string;
-};
+  title: string
+  subtitle: string
+}
 
 const Profile: React.FC<Props> = ({ title, subtitle }) => {
   return (
@@ -12,7 +13,7 @@ const Profile: React.FC<Props> = ({ title, subtitle }) => {
       <SelfIntroduction title={title} subtitle={subtitle} />
       <Skills />
     </>
-  );
-};
+  )
+}
 
-export default Profile;
+export default Profile

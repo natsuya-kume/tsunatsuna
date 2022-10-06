@@ -1,14 +1,15 @@
-import Image from "next/image";
-import Typed from "react-typed";
-import styles from "@/styles/home.module.css";
-import avatarImage from "@/assets/images/avatarImage_3.jpg";
-import { ROLES } from "@/features/home/const/ReactTyped";
+import Image from 'next/image'
+import Typed from 'react-typed'
+
+import avatarImage from '@/assets/images/avatarImage_3.jpg'
+import { ROLES } from '@/features/home/const/ReactTyped'
+import styles from '@/styles/home.module.css'
 
 type Props = {
-  title: string;
-  subtitle: string;
-  imageOn: boolean;
-};
+  title: string
+  subtitle: string
+  imageOn: boolean
+}
 
 const Home = ({ title, subtitle, imageOn = false }: Props) => {
   return (
@@ -16,7 +17,7 @@ const Home = ({ title, subtitle, imageOn = false }: Props) => {
       <div className={styles.text}>
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.subtitle}>
-          Get informed, collaborate and discover projects I'm working on.
+          Get informed, collaborate and discover projects I was working on.
         </p>
         <div className={styles.typeText}>
           <Typed
@@ -50,6 +51,6 @@ const Home = ({ title, subtitle, imageOn = false }: Props) => {
         </figure>
       )}
     </div>
-  );
-};
-export default Home;
+  )
+}
+export default Home

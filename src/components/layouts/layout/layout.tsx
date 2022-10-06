@@ -1,11 +1,12 @@
-import { ReactNode } from "react";
-import Header from "@/components/layouts/header/Header";
-import Divider from "@/components/layouts/divider/Divider";
-import Footer from "@/components/layouts/footer/Footer";
+import { ReactNode } from 'react'
+
+import Divider from '@/components/layouts/divider/Divider'
+import Footer from '@/components/layouts/footer/Footer'
+import Header from '@/components/layouts/header/Header'
 
 type Props = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 const Layout = ({ children }: Props) => {
   return (
@@ -15,7 +16,7 @@ const Layout = ({ children }: Props) => {
       <Divider />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

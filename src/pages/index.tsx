@@ -1,6 +1,7 @@
-import type { NextPage } from "next";
-import Home from "@/features/home/components/Home";
-import Container from "@/components/layouts/container/Container";
+import type { NextPage } from 'next'
+
+import Container from '@/components/layouts/container/Container'
+import Home from '@/features/home/components/Home'
 
 const HomePage: NextPage = () => {
   return (
@@ -11,6 +12,6 @@ const HomePage: NextPage = () => {
         imageOn
       />
     </Container>
-  );
-};
-export default HomePage;
+  )
+}
+export default HomePage

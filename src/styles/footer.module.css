@@ -3,13 +3,13 @@
 }
 
 .flexContainer {
-  composes: center from "@/styles/utils.module.css";
+  composes: center from '@/styles/utils.module.css';
   flex-direction: column;
   gap: 2em;
 }
 
 .socialIconContainer {
-  composes: center from "@/styles/utils.module.css";
+  composes: center from '@/styles/utils.module.css';
 }
 
 .socialIcon {
