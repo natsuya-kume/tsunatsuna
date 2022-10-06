@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const MaterialUiIcon = React.memo(() => {
   return (
@@ -23,7 +23,7 @@ const MaterialUiIcon = React.memo(() => {
         points="30,37.765 18,30 18,37 30,44.765"
       ></polygon>
     </svg>
-  );
-});
+  )
+})
 
-export default MaterialUiIcon;
+export default MaterialUiIcon

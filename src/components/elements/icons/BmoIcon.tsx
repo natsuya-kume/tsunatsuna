@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const BmoIcon = React.memo(() => {
   return (
@@ -58,7 +58,7 @@ const BmoIcon = React.memo(() => {
       ></path>
       <path fill="#84ffff" d="M28 25L26 28 30 28z"></path>
     </svg>
-  );
-});
+  )
+})
 
-export default BmoIcon;
+export default BmoIcon

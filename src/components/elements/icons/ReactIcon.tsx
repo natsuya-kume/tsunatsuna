@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const ReactIcon = React.memo(() => {
   return (
@@ -24,7 +24,7 @@ const ReactIcon = React.memo(() => {
       ></path>
       <circle cx="24" cy="24" r="4" fill="#80deea"></circle>
     </svg>
-  );
-});
+  )
+})
 
-export default ReactIcon;
+export default ReactIcon

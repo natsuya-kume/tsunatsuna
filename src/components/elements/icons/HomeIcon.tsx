@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 type Props = {
-  navListStyle?: string;
-  navChildstyle?: string;
-  linkText?: string;
-  linkTextStyle?: string;
-};
+  navListStyle?: string
+  navChildstyle?: string
+  linkText?: string
+  linkTextStyle?: string
+}
 
 const HomeIcon: React.FC<Props> = React.memo(
   ({ navListStyle, navChildstyle, linkText, linkTextStyle }) => {
@@ -38,8 +38,8 @@ const HomeIcon: React.FC<Props> = React.memo(
           <p className={linkTextStyle}>{linkText}</p>
         </div>
       </div>
-    );
+    )
   }
-);
+)
 
-export default HomeIcon;
+export default HomeIcon

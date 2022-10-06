@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const GolangIcon = React.memo(() => {
   return (
@@ -49,7 +49,7 @@ const GolangIcon = React.memo(() => {
         ></path>
       </g>
     </svg>
-  );
-});
+  )
+})
 
-export default GolangIcon;
+export default GolangIcon
