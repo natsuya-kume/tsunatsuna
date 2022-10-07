@@ -11,7 +11,9 @@
     "format": "prettier --check ./src",
     "format:fix": "yarn prettier --write ./src",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
-    "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\""
+    "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\"",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "flat-color-icons": "^1.1.0",
@@ -21,12 +23,14 @@
     "react-typed": "^1.2.0"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^8.0.3",
     "@tsconfig/strictest": "^1.0.2",
     "@types/node": "18.7.22",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
+    "cypress": "^10.9.0",
     "eslint": "^8.24.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-next": "12.3.1",
