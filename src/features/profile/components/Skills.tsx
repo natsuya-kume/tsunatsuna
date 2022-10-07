@@ -1,15 +1,15 @@
-import styles from "@/styles/profile.module.css";
-import CssIcon from "@/components/elements/icons/CssIcon";
-import GolangIcon from "@/components/elements/icons/GolangIcon";
-import GraphQLIcon from "@/components/elements/icons/GraphQLIcon";
-import HtmlIcon from "@/components/elements/icons/HtmlIcon";
-import JavaScriptIcon from "@/components/elements/icons/JavaScriptIcon";
-import MaterialUiIcon from "@/components/elements/icons/MaterialUiIcon";
-import PythonIcon from "@/components/elements/icons/PythonIcon";
-import ReactIcon from "@/components/elements/icons/ReactIcon";
-import SassIcon from "@/components/elements/icons/SassIcon";
-import TypeScriptIcon from "@/components/elements/icons/TypeScriptIcon";
-import ReduxIcon from "@/components/elements/icons/ReduxIcon";
+import CssIcon from '@/components/elements/icons/CssIcon'
+import GolangIcon from '@/components/elements/icons/GolangIcon'
+import GraphQLIcon from '@/components/elements/icons/GraphQLIcon'
+import HtmlIcon from '@/components/elements/icons/HtmlIcon'
+import JavaScriptIcon from '@/components/elements/icons/JavaScriptIcon'
+import MaterialUiIcon from '@/components/elements/icons/MaterialUiIcon'
+import PythonIcon from '@/components/elements/icons/PythonIcon'
+import ReactIcon from '@/components/elements/icons/ReactIcon'
+import ReduxIcon from '@/components/elements/icons/ReduxIcon'
+import SassIcon from '@/components/elements/icons/SassIcon'
+import TypeScriptIcon from '@/components/elements/icons/TypeScriptIcon'
+import styles from '@/styles/profile.module.css'
 
 const Skills = () => {
   return (
@@ -78,7 +78,7 @@ const Skills = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

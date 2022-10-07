@@ -1,8 +1,9 @@
-import Link from "next/link";
-import styles from "@/styles/footer.module.css";
-import Container from "@/components/layouts/container/Container";
-import TwitterIcon from "@/components/elements/icons/TwitterIcon";
-import GithubIcon from "@/components/elements/icons/GithubIcon";
+import Link from 'next/link'
+
+import GithubIcon from '@/components/elements/icons/GithubIcon'
+import TwitterIcon from '@/components/elements/icons/TwitterIcon'
+import Container from '@/components/layouts/container/Container'
+import styles from '@/styles/footer.module.css'
 
 const Footer = () => {
   return (
@@ -28,6 +29,6 @@ const Footer = () => {
         </div>
       </div>
     </Container>
-  );
-};
-export default Footer;
+  )
+}
+export default Footer

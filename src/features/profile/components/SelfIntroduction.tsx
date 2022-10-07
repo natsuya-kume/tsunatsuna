@@ -1,10 +1,10 @@
-import BmoIcon from "@/components/elements/icons/BmoIcon";
-import styles from "@/styles/profile.module.css";
+import BmoIcon from '@/components/elements/icons/BmoIcon'
+import styles from '@/styles/profile.module.css'
 
 type Props = {
-  title: string;
-  subtitle: string;
-};
+  title: string
+  subtitle: string
+}
 
 const SelfIntroduction: React.FC<Props> = ({ title, subtitle }) => {
   return (
@@ -26,7 +26,7 @@ const SelfIntroduction: React.FC<Props> = ({ title, subtitle }) => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SelfIntroduction;
+export default SelfIntroduction

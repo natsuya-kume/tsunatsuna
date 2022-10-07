@@ -1,12 +1,13 @@
-import Link from "next/link";
-import styles from "@/styles/nav.module.css";
-import HomeIcon from "@/components/elements/icons/HomeIcon";
-import ProfileIcon from "@/components/elements/icons/ProfileIcon";
-import BlogIcon from "@/components/elements/icons/BlogIcon";
-import WorksIcon from "@/components/elements/icons/WorksIcon";
-import ContactIcon from "@/components/elements/icons/ContactIcon";
-import PrivacyIcon from "@/components/elements/icons/PrivacyIcon";
-import { pagesPath } from "@/lib/$path";
+import Link from 'next/link'
+
+import BlogIcon from '@/components/elements/icons/BlogIcon'
+import ContactIcon from '@/components/elements/icons/ContactIcon'
+import HomeIcon from '@/components/elements/icons/HomeIcon'
+import PrivacyIcon from '@/components/elements/icons/PrivacyIcon'
+import ProfileIcon from '@/components/elements/icons/ProfileIcon'
+import WorksIcon from '@/components/elements/icons/WorksIcon'
+import { pagesPath } from '@/lib/$path'
+import styles from '@/styles/nav.module.css'
 
 const Nav = () => {
   return (
@@ -72,7 +73,7 @@ const Nav = () => {
         </div>
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

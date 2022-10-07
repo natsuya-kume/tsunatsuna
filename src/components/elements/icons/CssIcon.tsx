@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const CssIcon = React.memo(() => {
   return (
@@ -21,7 +21,7 @@ const CssIcon = React.memo(() => {
         d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
       ></path>
     </svg>
-  );
-});
+  )
+})
 
-export default CssIcon;
+export default CssIcon

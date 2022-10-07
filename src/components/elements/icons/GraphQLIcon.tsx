@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const GraphQLIcon = React.memo(() => {
   return (
@@ -25,7 +25,7 @@ const GraphQLIcon = React.memo(() => {
         d="M42.72,35H6.28L24.5,2.978L42.72,35z M9.72,33H39.28L24.5,7.022L9.72,33z"
       ></path>
     </svg>
-  );
-});
+  )
+})
 
-export default GraphQLIcon;
+export default GraphQLIcon

@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 type Props = {
-  style?: string;
-};
+  style?: string
+}
 
 const TwitterIcon: React.FC<Props> = React.memo(({ style }) => {
   return (
@@ -20,6 +20,6 @@ const TwitterIcon: React.FC<Props> = React.memo(({ style }) => {
         ></path>
       </svg>
     </div>
-  );
-});
-export default TwitterIcon;
+  )
+})
+export default TwitterIcon
