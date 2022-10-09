@@ -1,4 +1,4 @@
-import SelfIntroduction from '@/features/profile/components/Profile'
+import SelfIntroduction from '@/features/profile/components/SelfIntroduction'
 import Skills from '@/features/profile/components/Skills'
 
 type Props = {
