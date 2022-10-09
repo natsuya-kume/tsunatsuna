@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import Divider from '@/components/layouts/divider/Divider'
 import Footer from '@/components/layouts/footer/Footer'
