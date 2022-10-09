@@ -1,4 +1,10 @@
 export const pagesPath = {
+  blog: {
+    $url: (url?: { hash?: string }) => ({
+      pathname: '/blog' as const,
+      hash: url?.hash,
+    }),
+  },
   profile: {
     $url: (url?: { hash?: string }) => ({
       pathname: '/profile' as const,
