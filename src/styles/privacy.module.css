@@ -13,7 +13,6 @@
   letter-spacing: 0.15em;
   color: var(--main-title);
   display: flex;
-  text-align: center;
 }
 
 .subtitle {
