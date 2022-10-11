@@ -46,6 +46,16 @@ const Privacy = () => {
         アナリティクスから提供されるCookieを使用していますが、Google
         アナリティクスによって個人を特定する情報は取得していません。
       </p>
+      <p className={styles.subtitle}>
+        お客様はブラウザの設定でCookieを無効にすることで、トラフィックデータの収集を拒否することができます。なお、トラフィックデータからお客様個人を特定することはできません。詳しくは&nbsp;
+        <a
+          style={{ color: '#1e31a5' }}
+          href="https://marketingplatform.google.com/about/analytics/terms/jp/"
+        >
+          Googleアナリティクス利用規約🔗
+        </a>
+        &nbsp;をご確認ください。
+      </p>
       <h1 className={styles.title}>本ポリシーの変更</h1>
       <Divider style={{ marginTop: 0 }} />
       <p className={styles.subtitle}>
