@@ -11,6 +11,12 @@ export const pagesPath = {
       hash: url?.hash,
     }),
   },
+  privacy: {
+    $url: (url?: { hash?: string }) => ({
+      pathname: '/privacy' as const,
+      hash: url?.hash,
+    }),
+  },
   profile: {
     $url: (url?: { hash?: string }) => ({
       pathname: '/profile' as const,
