@@ -1,4 +1,10 @@
 export const pagesPath = {
+  contact: {
+    $url: (url?: { hash?: string }) => ({
+      pathname: '/contact' as const,
+      hash: url?.hash,
+    }),
+  },
   privacy: {
     $url: (url?: { hash?: string }) => ({
       pathname: '/privacy' as const,
