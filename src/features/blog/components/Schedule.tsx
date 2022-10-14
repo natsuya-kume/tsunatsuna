@@ -1,3 +1,5 @@
+import PostHeader from './PostHeader'
+
 import type { BlogType } from '@/features/blog/types/blog'
 
 const Schedule: React.FC<BlogType> = ({
@@ -7,7 +9,11 @@ const Schedule: React.FC<BlogType> = ({
   eyecatch,
   categories,
 }) => {
-  return <h1>{title}</h1>
+  return (
+    <article>
+      <PostHeader title={title} subtitle="Blog article" publish={publish} />
+    </article>
+  )
 }
 
 export default Schedule
