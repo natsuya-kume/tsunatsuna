@@ -20,4 +20,5 @@
   gap: 0.5em;
   color: var(--gray-50);
   font-size: var(--small-heading3);
+  align-items: center;
 }
