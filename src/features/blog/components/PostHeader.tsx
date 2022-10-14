@@ -1,6 +1,4 @@
-import { faClock } from '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import ClockIcon from '@/components/elements/icons/ClockIcon'
 import ConvertDate from '@/features/blog/components/ConvertDate'
 import styles from '@/styles/postHeader.module.css'
 
@@ -17,7 +15,7 @@ const PostHeader: React.FC<Props> = ({ title, subtitle, publish = '' }) => {
       <h1 className={styles.title}>{title}</h1>
       {publish && (
         <div className={styles.publish}>
-          <FontAwesomeIcon icon={faClock} size="lg" color="var(--gray-25)" />
+          <ClockIcon />
           <ConvertDate dateISO={publish} />
         </div>
       )}
