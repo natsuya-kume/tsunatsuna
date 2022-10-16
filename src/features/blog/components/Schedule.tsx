@@ -29,6 +29,8 @@ const Schedule: React.FC<BlogType> = ({
           height={eyecatch.height}
           sizes="(min-width:1152px) 1152px, 100vw"
           priority
+          placeholder="blur"
+          blurDataURL={eyecatch.blurDataURL}
         />
       </figure>
 

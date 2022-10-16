@@ -1,7 +1,10 @@
+import { getPlaiceholder } from 'plaiceholder'
+
 import Container from '@/components/layouts/container/Container'
 import { getPostBySlug } from '@/features/blog/api/getBlog'
 import Schedule from '@/features/blog/components/Schedule'
 import type { BlogType } from '@/features/blog/types/blog'
+import { eyecatchLoacal } from '@/lib/constants'
 
 const SchedulePage: React.FC<BlogType> = ({
   title,
@@ -18,6 +21,7 @@ const SchedulePage: React.FC<BlogType> = ({
         content={content}
         eyecatch={eyecatch}
         categories={categories}
+        // blurDataURL={eyecatch.}
       />
     </Container>
   )
@@ -26,16 +30,19 @@ const SchedulePage: React.FC<BlogType> = ({
 export default SchedulePage
 
 export const getStaticProps = async () => {
-  const slug = 'schedule'
+  const slug = 'micro'
 
   const post = await getPostBySlug(slug)
+  const eyecatch = post.eyecatch ?? eyecatchLoacal
+  const { base64 } = await getPlaiceholder(eyecatch.url)
+  eyecatch.blurDataURL = base64
 
   return {
     props: {
       title: post.title,
       publish: post.publishDate,
       content: post.content,
-      eyecatch: post.eyecatch,
+      eyecatch: eyecatch,
       categories: post.categories,
     },
   }

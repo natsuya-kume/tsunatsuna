@@ -6,6 +6,7 @@ export type BlogType = {
     url: string
     height: number
     width: number
+    blurDataURL?: string
   }
   categories: {
     id: string
