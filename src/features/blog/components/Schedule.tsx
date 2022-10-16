@@ -4,8 +4,10 @@ import { PostBody } from '@/components/layouts/postBody/PostBody'
 import {
   TwoColumn,
   TwoColumnMain,
+  TwoColumnSidebar,
 } from '@/components/layouts/twoColumn/TwoColumn'
 import { ConvertBody } from '@/features/blog/components/ConvertBody'
+import { PostCategories } from '@/features/blog/components/PostCategories'
 import PostHeader from '@/features/blog/components/PostHeader'
 import type { BlogType } from '@/features/blog/types/blog'
 const Schedule: React.FC<BlogType> = ({
@@ -36,6 +38,9 @@ const Schedule: React.FC<BlogType> = ({
             <ConvertBody contentHTML={content} />
           </PostBody>
         </TwoColumnMain>
+        <TwoColumnSidebar>
+          <PostCategories categories={categories} />
+        </TwoColumnSidebar>
       </TwoColumn>
     </article>
   )
