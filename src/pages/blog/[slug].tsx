@@ -2,7 +2,7 @@ import type { GetStaticProps } from 'next'
 import { getPlaiceholder } from 'plaiceholder'
 
 import Container from '@/components/layouts/container/Container'
-import { getPostBySlug } from '@/features/blog/api/getBlog'
+import { getAllSlugs, getPostBySlug } from '@/features/blog/api/getBlog'
 import Post from '@/features/blog/components/Post'
 import type { BlogType } from '@/features/blog/types/blog'
 import { eyecatchLoacal } from '@/lib/constants'
@@ -30,8 +30,9 @@ const PostPage: React.FC<BlogType> = ({
 export default PostPage
 
 export const getStaticPaths = async () => {
+  const allSlugs = await getAllSlugs()
   return {
-    paths: ['/blog/schedule', '/blog/music', '/blog/micro'],
+    paths: allSlugs.map(({ slug }: { slug: string }) => `/blog/${slug}`),
     fallback: false,
   }
 }
