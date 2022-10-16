@@ -1,11 +1,12 @@
 export const pagesPath = {
   blog: {
-    schedule: {
+    _slug: (slug: string | number) => ({
       $url: (url?: { hash?: string }) => ({
-        pathname: '/blog/schedule' as const,
+        pathname: '/blog/[slug]' as const,
+        query: { slug },
         hash: url?.hash,
       }),
-    },
+    }),
     $url: (url?: { hash?: string }) => ({
       pathname: '/blog' as const,
       hash: url?.hash,

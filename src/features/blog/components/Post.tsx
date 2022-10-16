@@ -10,7 +10,7 @@ import { ConvertBody } from '@/features/blog/components/ConvertBody'
 import { PostCategories } from '@/features/blog/components/PostCategories'
 import PostHeader from '@/features/blog/components/PostHeader'
 import type { BlogType } from '@/features/blog/types/blog'
-const Schedule: React.FC<BlogType> = ({
+const Post: React.FC<BlogType> = ({
   title,
   publish,
   content,
@@ -48,4 +48,4 @@ const Schedule: React.FC<BlogType> = ({
   )
 }
 
-export default Schedule
+export default Post
