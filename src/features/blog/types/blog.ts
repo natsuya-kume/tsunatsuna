@@ -36,3 +36,9 @@ export type PostsType = {
     blurDataURL?: string
   }
 }
+
+export type CategoryTypes = {
+  name: string
+  id: string
+  slug: string
+}
