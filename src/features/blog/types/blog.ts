@@ -17,4 +17,6 @@ export type BlogType = {
     name: string
     slug: string
   }[]
+  prevPost: { title: string; slug: string }
+  nextPost: { title: string; slug: string }
 }
