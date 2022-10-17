@@ -7,6 +7,7 @@ import {
   TwoColumnSidebar,
 } from '@/components/layouts/twoColumn/TwoColumn'
 import { ConvertBody } from '@/features/blog/components/ConvertBody'
+import { Pagination } from '@/features/blog/components/Pagination'
 import { PostCategories } from '@/features/blog/components/PostCategories'
 import PostHeader from '@/features/blog/components/PostHeader'
 import type { BlogType } from '@/features/blog/types/blog'
@@ -16,6 +17,8 @@ const Post: React.FC<BlogType> = ({
   content,
   eyecatch,
   categories,
+  prevPost,
+  nextPost,
 }) => {
   return (
     <article>
@@ -44,6 +47,12 @@ const Post: React.FC<BlogType> = ({
           <PostCategories categories={categories} />
         </TwoColumnSidebar>
       </TwoColumn>
+      <Pagination
+        prevText={prevPost.title}
+        prevUrl={`/blog/${prevPost.slug}`}
+        nextText={nextPost.title}
+        nextUrl={`/blog/${nextPost.slug}`}
+      />
     </article>
   )
 }
