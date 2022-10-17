@@ -6,6 +6,7 @@ import { getAllSlugs, getPostBySlug } from '@/features/blog/api/getBlog'
 import Post from '@/features/blog/components/Post'
 import type { BlogType } from '@/features/blog/types/blog'
 import { eyecatchLoacal } from '@/lib/constants'
+import { prevNextPost } from '@/lib/prevNextPost'
 
 const PostPage: React.FC<BlogType> = ({
   title,
@@ -13,6 +14,8 @@ const PostPage: React.FC<BlogType> = ({
   content,
   eyecatch,
   categories,
+  prevPost,
+  nextPost,
 }) => {
   return (
     <Container>
@@ -22,6 +25,8 @@ const PostPage: React.FC<BlogType> = ({
         content={content}
         eyecatch={eyecatch}
         categories={categories}
+        prevPost={prevPost}
+        nextPost={nextPost}
       />
     </Container>
   )
@@ -48,6 +53,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { base64 } = await getPlaiceholder(eyecatch.url)
   eyecatch.blurDataURL = base64
 
+  const allSlugs = await getAllSlugs()
+  const [prevPost, nextPost] = prevNextPost(allSlugs, slug)
+
   return {
     props: {
       title: post.title,
@@ -55,6 +63,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
       content: post.content,
       eyecatch: eyecatch,
       categories: post.categories,
+      prevPost: prevPost,
+      nextPost: nextPost,
     },
   }
 }
