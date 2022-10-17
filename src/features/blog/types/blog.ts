@@ -17,6 +17,11 @@ export type BlogType = {
     name: string
     slug: string
   }[]
-  prevPost: { title: string; slug: string }
-  nextPost: { title: string; slug: string }
+  prevPost: SlugType
+  nextPost: SlugType
+}
+
+export type SlugType = {
+  title: string
+  slug: string
 }

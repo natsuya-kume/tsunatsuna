@@ -4,7 +4,7 @@ import { getPlaiceholder } from 'plaiceholder'
 import Container from '@/components/layouts/container/Container'
 import { getAllSlugs, getPostBySlug } from '@/features/blog/api/getBlog'
 import Post from '@/features/blog/components/Post'
-import type { BlogType } from '@/features/blog/types/blog'
+import type { BlogType, SlugType } from '@/features/blog/types/blog'
 import { eyecatchLoacal } from '@/lib/constants'
 import { prevNextPost } from '@/lib/prevNextPost'
 
@@ -35,9 +35,9 @@ const PostPage: React.FC<BlogType> = ({
 export default PostPage
 
 export const getStaticPaths = async () => {
-  const allSlugs = await getAllSlugs()
+  const allSlugs: SlugType[] = await getAllSlugs()
   return {
-    paths: allSlugs.map(({ slug }: { slug: string }) => `/blog/${slug}`),
+    paths: allSlugs.map(({ slug }) => `/blog/${slug}`),
     fallback: false,
   }
 }
@@ -53,7 +53,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { base64 } = await getPlaiceholder(eyecatch.url)
   eyecatch.blurDataURL = base64
 
-  const allSlugs = await getAllSlugs()
+  const allSlugs: SlugType[] = await getAllSlugs()
   const [prevPost, nextPost] = prevNextPost(allSlugs, slug)
 
   return {
