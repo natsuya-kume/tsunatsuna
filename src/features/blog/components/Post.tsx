@@ -25,6 +25,7 @@ const Post: React.FC<BlogType> = ({
       <PostHeader title={title} subtitle="Blog article" publish={publish} />
       <figure>
         <Image
+          key={eyecatch.url}
           src={eyecatch.url}
           alt=""
           layout="responsive"
