@@ -5,6 +5,7 @@ import { getAllPosts } from '@/features/blog/api/getBlog'
 import Posts from '@/features/blog/components/Posts'
 import type { PostsType } from '@/features/blog/types/blog'
 import { eyecatchLocal } from '@/lib/constants'
+import { hasProperty } from '@/lib/hasProperty'
 
 type Props = {
   posts: PostsType[]
@@ -24,7 +25,8 @@ export const getStaticProps = async () => {
   const posts: PostsType[] = await getAllPosts()
 
   for (const post of posts) {
-    if (!(post && Object.prototype.hasOwnProperty.call(post, 'eyecatch'))) {
+    const hasEyecatchProperty = hasProperty(post, 'eyecatch')
+    if (!hasEyecatchProperty) {
       post.eyecatch = eyecatchLocal
     }
 

@@ -1,7 +1,6 @@
-export const prevNextPost = (
-  allSlugs: { title: string; slug: string }[],
-  currentSlug: string
-) => {
+import type { SlugType } from '@/features/blog/types/blog'
+
+export const prevNextPost = (allSlugs: SlugType[], currentSlug: string) => {
   const numberOfPosts = allSlugs.length
 
   const index = allSlugs.findIndex(({ slug }) => slug === currentSlug)
