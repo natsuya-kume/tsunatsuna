@@ -25,3 +25,14 @@ export type SlugType = {
   title: string
   slug: string
 }
+
+export type PostsType = {
+  title: string
+  slug: string
+  eyecatch: {
+    url: string
+    height: number
+    width: number
+    blurDataURL?: string
+  }
+}

@@ -5,7 +5,7 @@ import Container from '@/components/layouts/container/Container'
 import { getAllSlugs, getPostBySlug } from '@/features/blog/api/getBlog'
 import Post from '@/features/blog/components/Post'
 import type { BlogType, SlugType } from '@/features/blog/types/blog'
-import { eyecatchLoacal } from '@/lib/constants'
+import { eyecatchLocal } from '@/lib/constants'
 import { prevNextPost } from '@/lib/prevNextPost'
 
 const PostPage: React.FC<BlogType> = ({
@@ -49,7 +49,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return { notFound: true }
   }
   const post = await getPostBySlug(slug)
-  const eyecatch = post.eyecatch ?? eyecatchLoacal
+  const eyecatch = post.eyecatch ?? eyecatchLocal
   const { base64 } = await getPlaiceholder(eyecatch.url)
   eyecatch.blurDataURL = base64
 
