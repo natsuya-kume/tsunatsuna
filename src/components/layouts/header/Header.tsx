@@ -5,12 +5,14 @@ import styles from '@/styles/header.module.css'
 
 const Header = () => {
   return (
-    <Container large>
-      <div className={styles.flexContainer}>
-        <Logo boxOn />
-        <Nav />
-      </div>
-    </Container>
+    <header>
+      <Container large>
+        <div className={styles.flexContainer}>
+          <Logo />
+          <Nav />
+        </div>
+      </Container>
+    </header>
   )
 }
 export default Header
