@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const allCats: CategoryTypes[] = await getAllCategories()
   const cat = allCats.find(({ slug }) => slug === catSlug)
 
-  const posts = await getAllPostsByCategory(cat?.id)
+  const posts: PostsType[] = await getAllPostsByCategory(cat?.id)
 
   for (const post of posts) {
     const hasEyecatchProperty = hasProperty(post, 'eyecatch')
