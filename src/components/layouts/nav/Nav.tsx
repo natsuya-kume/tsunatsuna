@@ -12,7 +12,7 @@ import styles from '@/styles/nav.module.css'
 const Nav = () => {
   return (
     <div className={styles.navContainer}>
-      <Link href="/">
+      <Link href={pagesPath.$url()}>
         <div>
           <HomeIcon
             navListStyle={styles.navList}
@@ -32,7 +32,7 @@ const Nav = () => {
           />
         </div>
       </Link>
-      <Link href="/blog">
+      <Link href={pagesPath.blog.$url()}>
         <div>
           <BlogIcon
             navListStyle={styles.navList}
@@ -62,7 +62,7 @@ const Nav = () => {
           />
         </div>
       </Link>
-      <Link href="/privacy">
+      <Link href={pagesPath.privacy.$url()}>
         <div>
           <PrivacyIcon
             navListStyle={styles.navList}

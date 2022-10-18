@@ -6,6 +6,7 @@ export type BlogType = {
     url: string
     height: number
     width: number
+    blurDataURL?: string
   }
   categories: {
     id: string
@@ -16,4 +17,28 @@ export type BlogType = {
     name: string
     slug: string
   }[]
+  prevPost: SlugType
+  nextPost: SlugType
+}
+
+export type SlugType = {
+  title: string
+  slug: string
+}
+
+export type PostsType = {
+  title: string
+  slug: string
+  eyecatch: {
+    url: string
+    height: number
+    width: number
+    blurDataURL?: string
+  }
+}
+
+export type CategoryTypes = {
+  name: string
+  id: string
+  slug: string
 }
