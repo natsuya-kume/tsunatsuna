@@ -8,13 +8,13 @@
 }
 
 .title {
-  font-size: var(--heading2);
-  font-weight: 900;
   letter-spacing: 0.15em;
-  color: var(--main-title);
-  display: flex;
 }
 
 .subtitle {
   color: var(--base-text);
+}
+
+.googleanalyticsText {
+  color: #1e31a5;
 }
