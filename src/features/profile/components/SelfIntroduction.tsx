@@ -1,4 +1,5 @@
 import BmoIcon from '@/components/elements/icons/BmoIcon'
+import { PostBody } from '@/components/layouts/postBody/PostBody'
 import styles from '@/styles/profile.module.css'
 
 type Props = {
@@ -11,19 +12,25 @@ const SelfIntroduction: React.FC<Props> = ({ title, subtitle }) => {
     <div className={styles.flexContainer}>
       <div className={styles.text}>
         <div className={styles.profileTitleContainer}>
-          <h1 className={styles.title}>{title}</h1>
+          <PostBody>
+            <h2 className={styles.title}>{title}</h2>
+          </PostBody>
           <BmoIcon />
         </div>
-        <p className={styles.subtitle}>{subtitle}</p>
+        <PostBody>
+          <p>{subtitle}</p>
+        </PostBody>
       </div>
-      <div className={styles.text}>
-        <p className={styles.subtitle}>Age : 23</p>
-        <p className={styles.subtitle}>Occupation : Frontend Engineer</p>
-        <p className={styles.subtitle}>Birthplace : Wakayama</p>
-        <p className={styles.subtitle}>Address : Tokyo</p>
-        <p className={styles.subtitle}>
-          Hobby : Soccer / Guitar / Interior / Fassion
-        </p>
+      <div>
+        <PostBody>
+          <p className={styles.subtitle}>Age : 23</p>
+          <p className={styles.subtitle}>Occupation : Frontend Engineer</p>
+          <p className={styles.subtitle}>Birthplace : Wakayama</p>
+          <p className={styles.subtitle}>Address : Tokyo</p>
+          <p className={styles.subtitle}>
+            Hobby : Soccer / Guitar / Interior / Fassion
+          </p>
+        </PostBody>
       </div>
     </div>
   )

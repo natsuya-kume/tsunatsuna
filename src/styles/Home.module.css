@@ -8,6 +8,10 @@
   padding-bottom: calc(var(--display) * 0.7);
 }
 
+.title {
+  letter-spacing: 0.15em;
+}
+
 .typeText {
   font-size: var(--heading2);
   color: var(--base-text);

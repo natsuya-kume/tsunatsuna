@@ -17,7 +17,7 @@ const Home = ({ title, subtitle, imageOn = false }: Props) => {
     <div className={styles.flexContainer}>
       <div className={styles.text}>
         <PostBody>
-          <h2>{title}</h2>
+          <h2 className={styles.title}>{title}</h2>
           <p>
             Get informed, collaborate and discover projects I was working on.
           </p>
@@ -34,7 +34,7 @@ const Home = ({ title, subtitle, imageOn = false }: Props) => {
               cursorChar="|"
             ></Typed>
           </div>
-          <p className={styles.subtitle}>{subtitle}</p>
+          <p>{subtitle}</p>
         </PostBody>
       </div>
       {imageOn && (
