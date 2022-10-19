@@ -1,19 +1,23 @@
 .stack > * + * {
-  margin-top: var(--stack-space, 1.5em);
+  margin-top: var(--stack-space, 1em);
 }
 
 .stack h2,
 .stack h3 {
   --stack-space: 2em;
+  font-weight: 700;
+  color: var(--main-title);
 }
 
 .stack h2 + *,
 .stack h3 + * {
   --stack-space: 0.8em;
+  color: var(--main-title);
 }
 
 .stack p {
-  line-height: 1.8;
+  line-height: 1.4;
+  color: var(--base-text);
 }
 
 .stack ul {

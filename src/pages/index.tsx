@@ -7,7 +7,7 @@ const HomePage: NextPage = () => {
   return (
     <Container>
       <Home
-        title="NATSUYA'S PORTFOLIO"
+        title="TSUNA TSUNA PORTFOLIO"
         subtitle="Let's take a look on my work."
         imageOn
       />
