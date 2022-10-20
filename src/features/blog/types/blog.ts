@@ -1,6 +1,6 @@
 export type BlogType = {
   title: string
-  publish: string
+  publishDate: string
   content: string
   eyecatch: {
     url: string
@@ -35,6 +35,16 @@ export type PostsType = {
     width: number
     blurDataURL?: string
   }
+  categories: {
+    id: string
+    createdAt: string
+    updatedAt: string
+    publishedAt: string
+    revisedAt: string
+    name: string
+    slug: string
+  }[]
+  publishDate: string
 }
 
 export type CategoryTypes = {

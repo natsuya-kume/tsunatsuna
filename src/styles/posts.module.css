@@ -9,10 +9,23 @@
 .post h2 {
   margin-top: 0.5em;
   font-size: var(--small-heading3);
+  font-weight: 700;
+  color: var(--base-text);
+}
+
+.post p {
+  margin-top: 0.5em;
+  font-size: 0.8em;
   font-weight: 400;
+  color: var(--base-text);
 }
 
 .post figure {
   position: relative;
   aspect-ratio: 16/9;
+}
+
+.categoryContainer {
+  display: flex;
+  gap: var(--space-jump);
 }

@@ -36,7 +36,7 @@ export const getAllPosts = async (limit = 100) => {
     const posts = await client.get({
       endpoint: 'blogs',
       queries: {
-        fields: 'title,slug,eyecatch',
+        fields: 'title,publishDate,slug,eyecatch,categories',
         orders: '-publishDate',
         limit: limit,
       },
