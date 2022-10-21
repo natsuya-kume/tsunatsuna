@@ -12,7 +12,7 @@ const PostHeader: React.FC<Props> = ({ title, subtitle, publish = '' }) => {
   return (
     <div className={styles.stack}>
       <p className={styles.subtitle}>{subtitle}</p>
-      <h1 className={styles.title}>{title}</h1>
+      <h2 className={styles.title}>{title}</h2>
       {publish && (
         <div className={styles.publish}>
           <ClockIcon />

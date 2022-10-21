@@ -30,22 +30,37 @@ const Posts: React.FC<Props> = ({ posts }) => {
                   blurDataURL={eyecatch.blurDataURL}
                 />
               </figure>
-              <h2>{title}</h2>
-              <div className={styles.categoryContainer}>
-                {categories.map(({ name }: { name: string }) => (
-                  <p key={slug}>{name}</p>
-                ))}
+              <div className={styles.textContainer}>
+                <h2>{title}</h2>
+                <div className={styles.categoryContainer}>
+                  {categories.map(
+                    ({
+                      name,
+                      slug: categorySlug,
+                    }: {
+                      name: string
+                      slug: string
+                    }) => (
+                      <div className={styles.categoryTag} key={slug}>
+                        <Link href={`/blog/category/${categorySlug}`}>
+                          <p key={slug}>#{name}</p>
+                        </Link>
+                      </div>
+                    )
+                  )}
+                </div>
+                <ConvertDate
+                  dateISO={publishDate}
+                  style={{
+                    color: '#656a7b',
+                    fontSize: '0.8em',
+                    alignItems: 'end',
+                    display: 'flex',
+                    justifyContent: 'end',
+                    marginTop: '4em',
+                  }}
+                />
               </div>
-              <ConvertDate
-                dateISO={publishDate}
-                style={{
-                  color: '#656a7b',
-                  fontSize: '0.8em',
-                  alignItems: 'end',
-                  display: 'flex',
-                  justifyContent: 'end',
-                }}
-              />
             </a>
           </Link>
         </article>

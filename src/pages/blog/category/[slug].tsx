@@ -20,7 +20,7 @@ type Props = {
 const CategoryPage: React.FC<Props> = ({ name, posts }) => {
   return (
     <Container>
-      <PostHeader title={name} subtitle="Blog Catagory" />
+      <PostHeader title={name} />
       <Posts posts={posts} />
     </Container>
   )

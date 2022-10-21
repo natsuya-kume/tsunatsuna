@@ -22,7 +22,7 @@ const Post: React.FC<BlogType> = ({
 }) => {
   return (
     <article>
-      <PostHeader title={title} subtitle="Blog article" publish={publishDate} />
+      <PostHeader title={title} publish={publishDate} />
       <figure>
         <Image
           key={eyecatch.url}

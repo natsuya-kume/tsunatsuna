@@ -1,23 +1,36 @@
 .gridContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--space-jump);
-  margin-top: var(--space-xs);
-  margin-bottom: var(--space-lg);
+  /* margin-top: var(--space-xs);
+  margin-bottom: var(--space-lg); */
+  padding-top: calc(var(--display) * 0.5);
+  padding-bottom: calc(var(--display) * 0.7);
+}
+
+.post {
+  border-radius: 1rem;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 10%),
+    inset 4px 4px 8px hsl(0deg 0% 100% / 60%),
+    inset -4px -4px 8px rgb(0 0 0 / 5%);
+  overflow: hidden;
+  position: relative;
 }
 
 .post h2 {
-  margin-top: 0.5em;
-  font-size: var(--small-heading3);
+  /* margin-top: 0.5em; */
+  /* font-size: var(--small-heading3); */
+  font-size: 1rem;
   font-weight: 700;
   color: var(--base-text);
 }
 
 .post p {
-  margin-top: 0.5em;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 400;
   color: var(--base-text);
+  letter-spacing: 0.1em;
+  margin: 0.1em;
 }
 
 .post figure {
@@ -25,7 +38,46 @@
   aspect-ratio: 16/9;
 }
 
+.textContainer {
+  padding: 1em;
+  /* margin-bottom: 1em; */
+}
+
 .categoryContainer {
   display: flex;
-  gap: var(--space-jump);
+  gap: var(--space-xs);
+  position: absolute;
+  bottom: 10;
+  z-index: 9999;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-jump);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-lg);
+  }
+}
+
+.categoryTag {
+  border-radius: 0.6rem;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 10%), 1px 1px 2px transparent,
+    inset 2px 2px 4px hsl(0deg 0% 100% / 90%),
+    inset -2px -2px 4px rgb(0 0 0 / 5%);
+  margin-top: 0.5em;
+  padding: 5px;
+  transition: box-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 99999;
+}
+
+@media (hover: hover) {
+  .categoryTag:hover {
+    background-color: #e7e8ef;
+    box-shadow: inset -3px -3px 6px #fff, inset 3px 3px 6px #b4b6bf;
+  }
 }

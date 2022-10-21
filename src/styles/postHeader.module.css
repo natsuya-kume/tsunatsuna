@@ -8,17 +8,23 @@
 
 .subtitle {
   font-size: var(--small-heading2);
-  font-weight: 700;
+  font-weight: 400;
+  font-size: var(--small-heading3);
+  color: var(--base-text);
 }
 
 .title {
   --stack-space: 0.2em;
+  color: var(--base-text);
+  font-weight: 700;
+  text-align: center;
 }
 
 .publish {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   gap: 0.5em;
   color: var(--gray-50);
   font-size: var(--small-heading3);
-  align-items: center;
 }
