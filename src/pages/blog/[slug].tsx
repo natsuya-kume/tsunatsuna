@@ -10,7 +10,7 @@ import { prevNextPost } from '@/lib/prevNextPost'
 
 const PostPage: React.FC<BlogType> = ({
   title,
-  publish,
+  publishDate,
   content,
   eyecatch,
   categories,
@@ -21,7 +21,7 @@ const PostPage: React.FC<BlogType> = ({
     <Container>
       <Post
         title={title}
-        publish={publish}
+        publishDate={publishDate}
         content={content}
         eyecatch={eyecatch}
         categories={categories}
@@ -59,7 +59,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       title: post.title,
-      publish: post.publishDate,
+      publishDate: post.publishDate,
       content: post.content,
       eyecatch: eyecatch,
       categories: post.categories,

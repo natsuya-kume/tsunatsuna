@@ -13,7 +13,7 @@ import PostHeader from '@/features/blog/components/PostHeader'
 import type { BlogType } from '@/features/blog/types/blog'
 const Post: React.FC<BlogType> = ({
   title,
-  publish,
+  publishDate,
   content,
   eyecatch,
   categories,
@@ -22,7 +22,7 @@ const Post: React.FC<BlogType> = ({
 }) => {
   return (
     <article>
-      <PostHeader title={title} subtitle="Blog article" publish={publish} />
+      <PostHeader title={title} publish={publishDate} />
       <figure>
         <Image
           key={eyecatch.url}

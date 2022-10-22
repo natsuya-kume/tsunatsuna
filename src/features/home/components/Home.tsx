@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Typed from 'react-typed'
 
 import avatarImage from '@/assets/images/avatarImage_3.jpg'
+import { PostBody } from '@/components/layouts/postBody/PostBody'
 import { ROLES } from '@/features/home/const/ReactTyped'
 import styles from '@/styles/home.module.css'
 
@@ -15,24 +16,26 @@ const Home = ({ title, subtitle, imageOn = false }: Props) => {
   return (
     <div className={styles.flexContainer}>
       <div className={styles.text}>
-        <h1 className={styles.title}>{title}</h1>
-        <p className={styles.subtitle}>
-          Get informed, collaborate and discover projects I was working on.
-        </p>
-        <div className={styles.typeText}>
-          <Typed
-            loop
-            strings={ROLES}
-            typeSpeed={70}
-            backSpeed={70}
-            backDelay={1000}
-            loopCount={0}
-            showCursor
-            className="self-typed"
-            cursorChar="|"
-          ></Typed>
-        </div>
-        <p className={styles.subtitle}>{subtitle}</p>
+        <PostBody>
+          <h2 className={styles.title}>{title}</h2>
+          <p>
+            Get informed, collaborate and discover projects I was working on.
+          </p>
+          <div>
+            <Typed
+              loop
+              strings={ROLES}
+              typeSpeed={70}
+              backSpeed={70}
+              backDelay={1000}
+              loopCount={0}
+              showCursor
+              className="self-typed"
+              cursorChar="|"
+            ></Typed>
+          </div>
+          <p>{subtitle}</p>
+        </PostBody>
       </div>
       {imageOn && (
         <figure className={styles.avatar}>

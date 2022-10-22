@@ -1,5 +1,6 @@
 .flexContainer {
   composes: sideBySideCenter from '@/styles/utils.module.css';
+  padding: 1em 0em;
 }
 
 .text {
@@ -8,15 +9,7 @@
 }
 
 .title {
-  font-size: var(--heading2);
-  font-weight: 900;
   letter-spacing: 0.15em;
-  color: var(--main-title);
-}
-
-.subtitle {
-  font-size: var(--heading3);
-  color: var(--base-text);
 }
 
 .typeText {
