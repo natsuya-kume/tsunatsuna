@@ -1,0 +1,50 @@
+.flexContainer {
+  composes: center from '@/styles/utils.module.css';
+}
+
+.contactContainer {
+  padding-top: calc(var(--display) * 0.5);
+  padding-bottom: calc(var(--display) * 0.7);
+  width: 60%;
+}
+
+.labelTitle {
+  font-size: var(--heading2);
+  letter-spacing: 0.15em;
+  color: var(--base-text);
+}
+
+.contactInput {
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: none;
+  box-sizing: border-box;
+  caret-color: #8953a2;
+  padding: 0.9em 1.2em;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 2px hsl(0deg 0% 100% / 69%),
+    -1px -1px 2px rgb(0 0 0 / 10%), inset -2px -2px 3px hsl(0deg 0% 100% / 69%),
+    inset 2px 2px 6px rgb(0 0 0 / 12%);
+  margin-top: 0.75em;
+  width: 100%;
+  color: var(--base-text);
+  font-weight: 700;
+}
+
+.textArea {
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: none;
+  box-sizing: border-box;
+  caret-color: #8953a2;
+  padding: 0.9em 1.2em;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 2px hsl(0deg 0% 100% / 69%),
+    -1px -1px 2px rgb(0 0 0 / 10%), inset -2px -2px 3px hsl(0deg 0% 100% / 69%),
+    inset 2px 2px 6px rgb(0 0 0 / 12%);
+  margin-top: 0.75em;
+  width: 100%;
+  height: 30rem;
+  color: var(--base-text);
+  font-weight: 700;
+}
