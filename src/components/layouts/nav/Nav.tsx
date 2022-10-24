@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { useState } from 'react'
 
 import BlogIcon from '@/components/elements/icons/BlogIcon'
 import ContactIcon from '@/components/elements/icons/ContactIcon'
@@ -7,17 +6,12 @@ import HomeIcon from '@/components/elements/icons/HomeIcon'
 import PrivacyIcon from '@/components/elements/icons/PrivacyIcon'
 import ProfileIcon from '@/components/elements/icons/ProfileIcon'
 import WorksIcon from '@/components/elements/icons/WorksIcon'
+import { useNav } from '@/hooks/useNav'
 import { pagesPath } from '@/lib/$path'
 import styles from '@/styles/nav.module.css'
 
 const Nav = () => {
-  const [navIsOpen, setNavIsOpen] = useState(false)
-  const toggleNav = () => {
-    setNavIsOpen((prev) => !prev)
-  }
-  const closeNav = () => {
-    setNavIsOpen(false)
-  }
+  const { toggleNav, closeNav, navIsOpen } = useNav()
   return (
     <nav className={navIsOpen ? styles.open : styles.close}>
       {navIsOpen && (
