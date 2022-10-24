@@ -5,7 +5,6 @@ import { isContact } from '@/lib/typeGuardUtils'
 export const contact = async (req: NextApiRequest, res: NextApiResponse) => {
   const X_MICROCMS_API_KEY = process.env.API_KEY
 
-  // クエリとAPIキーのチェック
   if (!isContact(req.body) || typeof X_MICROCMS_API_KEY === 'undefined') {
     return res.status(404).end()
   }
@@ -24,7 +23,6 @@ export const contact = async (req: NextApiRequest, res: NextApiResponse) => {
     .then(() => 'Created')
     .catch(() => null)
 
-  // CMS側で正しく作成されたかチェック
   if (content !== 'Created') {
     return res.status(401).json({ message: 'Unauthorized' })
   }
