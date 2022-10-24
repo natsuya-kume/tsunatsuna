@@ -8,10 +8,17 @@
   width: 60%;
 }
 
+.inputContainer {
+  margin-top: 1em;
+}
+
 .labelTitle {
   font-size: var(--heading2);
   letter-spacing: 0.15em;
   color: var(--base-text);
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 .contactInput {
@@ -47,4 +54,39 @@
   height: 30rem;
   color: var(--base-text);
   font-weight: 700;
+}
+
+.validationText {
+  font-size: 0.5em;
+  color: #da2f82;
+}
+
+.submitButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+.submitButton {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #b4b6bf, -3px -3px 6px#fff;
+  background-color: #e7e8ef;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #d6d9ef;
+  color: var(--base-text);
+  font-weight: 700;
+}
+
+@media (hover: hover) {
+  .submitButton:hover {
+    background-color: #e7e8ef;
+    box-shadow: inset -3px -3px 6px #fff, inset 3px 3px 6px #b4b6bf;
+  }
 }

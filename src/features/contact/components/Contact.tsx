@@ -1,14 +1,32 @@
+import { yupResolver } from '@hookform/resolvers/yup'
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
+import * as yup from 'yup'
 
 import type { Contact as ContactType } from '@/features/contact/types/contact'
 import styles from '@/styles/contact.module.css'
+
+const schema = yup
+  .object({
+    name: yup.string().required('名前は必須項目です'),
+    email: yup.string().email('正しいメールアドレスではありません').required(),
+    body: yup.string().required('お問い合わせ内容は必須です。'),
+  })
+  .required()
 
 export const Contact = () => {
   const router = useRouter()
 
   const baseUrl = process.env.TSUNATSUNA_NEXT_PUBLIC_BASE_URL ?? ''
-  const { register, handleSubmit } = useForm<ContactType>()
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<ContactType>({
+    resolver: yupResolver(schema),
+    mode: 'onSubmit',
+  })
 
   const onSubmit = async (contact: ContactType): Promise<void> => {
     try {
@@ -28,6 +46,7 @@ export const Contact = () => {
     } catch (err) {
       void router.push('/contact/error')
     }
+    reset()
   }
   return (
     <div className={styles.flexContainer}>
@@ -36,15 +55,21 @@ export const Contact = () => {
           <div>
             <label className={styles.labelTitle}>
               <span>Name</span>
+              <span className={styles.validationText}>
+                {errors.name && 'Name is required'}
+              </span>
             </label>
             <input
               {...register('name', { required: true, maxLength: 20 })}
               className={styles.contactInput}
             />
           </div>
-          <div style={{ marginTop: 20 }}>
+          <div className={styles.inputContainer}>
             <label className={styles.labelTitle}>
               <span>Email</span>
+              <p className={styles.validationText}>
+                {errors.name && 'Email is required'}
+              </p>
             </label>
             <input
               {...register('email', {
@@ -58,18 +83,23 @@ export const Contact = () => {
               className={styles.contactInput}
             />
           </div>
-          <div style={{ marginTop: 20 }}>
+          <div className={styles.inputContainer}>
             <label className={styles.labelTitle}>
               <span>Message</span>
+              <p className={styles.validationText}>
+                {errors.name && 'Body is required'}
+              </p>
             </label>
             <textarea
               {...register('body', { required: true, maxLength: 20 })}
               className={styles.textArea}
             />
           </div>
-          <button type="submit">
-            <span>送信する</span>
-          </button>
+          <div className={styles.submitButtonContainer}>
+            <button type="submit" className={styles.submitButton}>
+              <span>送信する</span>
+            </button>
+          </div>
         </form>
       </div>
     </div>
