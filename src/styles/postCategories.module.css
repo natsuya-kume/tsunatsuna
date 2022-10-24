@@ -30,7 +30,7 @@
   margin-top: 0.5em;
   padding: 5px;
   transition: box-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  z-index: 99999;
+  z-index: 50;
 }
 
 @media (hover: hover) {
