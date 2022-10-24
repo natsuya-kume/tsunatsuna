@@ -1,7 +1,8 @@
 import { yupResolver } from '@hookform/resolvers/yup'
-import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
+import { ToastContainer, toast } from 'react-toastify'
 import * as yup from 'yup'
+import 'react-toastify/dist/ReactToastify.css'
 
 import type { Contact as ContactType } from '@/features/contact/types/contact'
 import styles from '@/styles/contact.module.css'
@@ -15,8 +16,6 @@ const schema = yup
   .required()
 
 export const Contact = () => {
-  const router = useRouter()
-
   const baseUrl = process.env.TSUNATSUNA_NEXT_PUBLIC_BASE_URL ?? ''
   const {
     register,
@@ -41,15 +40,15 @@ export const Contact = () => {
           throw Error(`${res.status} ${res.statusText}`)
         }
       })
-
-      void router.push('/contact/success')
+      toast.success('Your message has been sent!')
     } catch (err) {
-      void router.push('/contact/error')
+      toast.error('An error occurred.')
     }
     reset()
   }
   return (
     <div className={styles.flexContainer}>
+      <ToastContainer toastClassName={styles.toast} />
       <div className={styles.contactContainer}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div>
