@@ -10,6 +10,9 @@ export const pagesPath = {
     },
     $url: (url?: { hash?: string }) => ({ pathname: '/blog' as const, hash: url?.hash })
   },
+  "contact": {
+    $url: (url?: { hash?: string }) => ({ pathname: '/contact' as const, hash: url?.hash })
+  },
   "privacy": {
     $url: (url?: { hash?: string }) => ({ pathname: '/privacy' as const, hash: url?.hash })
   },
