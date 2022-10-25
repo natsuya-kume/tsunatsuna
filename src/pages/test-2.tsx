@@ -2,6 +2,7 @@ import Container from '@/components/layouts/container/Container'
 import Profile from '@/features/profile/components/Profile'
 
 const ProfilePage = () => {
+  console.log('')
   return (
     <Container>
       <Profile
