@@ -1,4 +1,4 @@
-.navContainer {
+.list {
   display: flex;
   gap: 1em;
 }
@@ -35,5 +35,106 @@
   .navChild:hover {
     background-color: #e7e8ef;
     box-shadow: inset -3px -3px 6px #fff, inset 3px 3px 6px #b4b6bf;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    display: none;
+  }
+  .list {
+    display: flex;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn {
+    all: unset;
+    outline: revert;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    z-index: 200;
+  }
+
+  .close .btn {
+    color: var(--base-text);
+  }
+
+  .open .btn {
+    color: var(--base-text);
+  }
+
+  .btn {
+    display: grid;
+    place-items: center;
+  }
+
+  .btn::before,
+  .btn::after,
+  .btn .bar {
+    grid-area: 1 / 1;
+    content: '';
+    display: block;
+    width: 32px;
+    height: 2px;
+    background-color: currentColor;
+    transition: transform 0.4s;
+  }
+
+  .close .btn::before {
+    transform: translateY(-8px);
+  }
+  .close .btn::after {
+    transform: translateY(8px);
+  }
+
+  .open .btn::before {
+    transform: rotate(45deg);
+  }
+  .open .btn::after {
+    transform: rotate(-45deg);
+  }
+  .open .btn .bar {
+    transform: scale(0);
+  }
+
+  .list {
+    position: fixed;
+    inset: 0 -100% 0 100%;
+    z-index: 100;
+    background: #e6e7ed;
+    color: var(--white);
+    transition: transform 0.4s;
+  }
+
+  .open .list {
+    transform: translateX(-100%);
+  }
+
+  .list {
+    display: grid;
+    gap: 40px;
+    place-content: center;
+    text-align: center;
+  }
+}
+
+@media (hover: hover) {
+  .list a:hover {
+    color: var(--accent);
+  }
+}
+
+@media (hover: none) {
+  .list a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .list a:active {
+    color: var(--accent);
   }
 }
