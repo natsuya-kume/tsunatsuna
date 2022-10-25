@@ -11,6 +11,6 @@
 
 ## その他
 
-- [bulletprrof](https://github.com/alan2207/bulletproof-react/blob/master/docs/project-structure.md)
+- [bulletproof](https://github.com/alan2207/bulletproof-react/blob/master/docs/project-structure.md)
 - [neumorphism-ui](https://demo.themesberg.com/neumorphism-ui/)
 - [icons8](https://icons8.com/)
