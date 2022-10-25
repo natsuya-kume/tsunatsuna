@@ -5,7 +5,7 @@ const ProfilePage = () => {
   return (
     <Container>
       <Profile
-        title="Welcome to Profile Page"
+        title="Profile Page"
         subtitle="Feel free to read short description about me."
       />
     </Container>
