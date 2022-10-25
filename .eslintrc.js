@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'import'],
   rules: {
+    'no-console': 'error',
     'react/react-in-jsx-scope': 'off',
     'react/display-name': 'off',
     semi: ['error', 'never'],
