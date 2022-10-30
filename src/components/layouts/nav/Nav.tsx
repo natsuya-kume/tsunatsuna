@@ -5,7 +5,6 @@ import ContactIcon from '@/components/elements/icons/ContactIcon'
 import HomeIcon from '@/components/elements/icons/HomeIcon'
 import PrivacyIcon from '@/components/elements/icons/PrivacyIcon'
 import ProfileIcon from '@/components/elements/icons/ProfileIcon'
-import WorksIcon from '@/components/elements/icons/WorksIcon'
 import { useNav } from '@/hooks/useNav'
 import { pagesPath } from '@/lib/$path'
 import styles from '@/styles/nav.module.css'
@@ -60,7 +59,7 @@ const Nav = () => {
             />
           </div>
         </Link>
-        <Link href="/works">
+        {/* <Link href="/works">
           <div onClick={closeNav}>
             <WorksIcon
               navListStyle={styles.navList}
@@ -69,7 +68,7 @@ const Nav = () => {
               linkTextStyle={styles.navChildText}
             />
           </div>
-        </Link>
+        </Link> */}
         <Link href="/contact">
           <div onClick={closeNav}>
             <ContactIcon

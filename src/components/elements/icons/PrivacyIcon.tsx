@@ -1,9 +1,9 @@
 import React from 'react'
 type Props = {
-  navListStyle?: string
-  navChildstyle?: string
-  linkText?: string
-  linkTextStyle?: string
+  navListStyle?: string | undefined
+  navChildstyle?: string | undefined
+  linkText?: string | undefined
+  linkTextStyle?: string | undefined
 }
 
 const PrivacyIcon: React.FC<Props> = React.memo(

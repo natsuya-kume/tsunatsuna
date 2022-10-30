@@ -3,3 +3,5 @@ describe('example to-do app', () => {
     cy.visit('http://localhost:3000/')
   })
 })
+
+export {}

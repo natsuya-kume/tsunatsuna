@@ -1,7 +1,7 @@
 import React from 'react'
 
 type Props = {
-  isTransform?: boolean
+  isTransform?: boolean | undefined
 }
 
 export const LeftArrowIcon: React.FC<Props> = React.memo(
