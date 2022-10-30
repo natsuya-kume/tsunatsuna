@@ -1,4 +1,3 @@
-// react-typedで表示させる文字をまとめた配列
 export const ROLES = [
   'Developer',
   'Team Player',
