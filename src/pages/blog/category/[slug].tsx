@@ -2,6 +2,7 @@ import type { GetStaticProps } from 'next'
 import { getPlaiceholder } from 'plaiceholder'
 
 import Container from '@/components/layouts/container/Container'
+import Meta from '@/components/layouts/meta/Meta'
 import {
   getAllCategories,
   getAllPostsByCategory,
@@ -20,6 +21,7 @@ type Props = {
 const CategoryPage: React.FC<Props> = ({ name, posts }) => {
   return (
     <Container>
+      <Meta pageTitle={name} pageDesc={`relating ${name} blog`} />
       <PostHeader title={name} />
       <Posts posts={posts} />
     </Container>
