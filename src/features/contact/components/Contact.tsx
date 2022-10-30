@@ -48,7 +48,9 @@ export const Contact = () => {
   }
   return (
     <div className={styles.flexContainer}>
-      <ToastContainer toastClassName={styles.toast} />
+      <div className={styles.toast}>
+        <ToastContainer />
+      </div>
       <div className={styles.contactContainer}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div>
