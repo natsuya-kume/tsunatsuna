@@ -13,7 +13,6 @@ export const ConvertBody: React.FC<Props> = ({ contentHTML }) => {
     $(elm).html(result.value)
     $(elm).addClass('hljs')
   })
-  // {MEMO: This is used when fix image size in blog page.}
   // const contentReact = parse($.html(), {
   //   replace: (node) => {
   //     if (node instanceof Element && node.attribs && node.name === 'img') {
