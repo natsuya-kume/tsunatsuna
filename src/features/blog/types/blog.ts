@@ -17,6 +17,7 @@ export type BlogType = {
     name: string
     slug: string
   }[]
+  description?: string | undefined
   prevPost: SlugType
   nextPost: SlugType
 }

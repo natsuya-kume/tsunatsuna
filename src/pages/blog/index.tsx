@@ -1,6 +1,7 @@
 import { getPlaiceholder } from 'plaiceholder'
 
 import Container from '@/components/layouts/container/Container'
+import Meta from '@/components/layouts/meta/Meta'
 import { getAllPosts } from '@/features/blog/api/getBlog'
 import Posts from '@/features/blog/components/Posts'
 import type { PostsType } from '@/features/blog/types/blog'
@@ -14,6 +15,7 @@ type Props = {
 const BlogPage: React.FC<Props> = ({ posts }) => {
   return (
     <Container>
+      <Meta pageTitle="Blog" pageDesc="This is blog list page" />
       <Posts posts={posts} />
     </Container>
   )
