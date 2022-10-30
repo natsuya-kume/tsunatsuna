@@ -4,8 +4,8 @@ import styles from '@/styles/postHeader.module.css'
 
 type Props = {
   title: string
-  subtitle?: string
-  publish?: string
+  subtitle?: string | undefined
+  publish?: string | undefined
 }
 
 const PostHeader: React.FC<Props> = ({ title, subtitle, publish = '' }) => {

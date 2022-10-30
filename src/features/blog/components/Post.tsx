@@ -34,7 +34,7 @@ const Post: React.FC<BlogType> = ({
           sizes="(min-width:1152px) 1152px, 100vw"
           priority
           placeholder="blur"
-          blurDataURL={eyecatch.blurDataURL}
+          blurDataURL={eyecatch.blurDataURL && eyecatch.blurDataURL}
         />
       </figure>
 

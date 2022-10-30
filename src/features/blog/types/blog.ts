@@ -6,7 +6,7 @@ export type BlogType = {
     url: string
     height: number
     width: number
-    blurDataURL?: string
+    blurDataURL: string
   }
   categories: {
     id: string
@@ -33,7 +33,7 @@ export type PostsType = {
     url: string
     height: number
     width: number
-    blurDataURL?: string
+    blurDataURL: string
   }
   categories: {
     id: string

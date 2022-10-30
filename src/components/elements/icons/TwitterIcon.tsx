@@ -1,6 +1,6 @@
 import React from 'react'
 type Props = {
-  style?: string
+  style?: string | undefined
 }
 
 const TwitterIcon: React.FC<Props> = React.memo(({ style }) => {
