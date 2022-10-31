@@ -25,6 +25,10 @@
   color: var(--base-text);
 }
 
+.post h2:hover {
+  color: #874996;
+}
+
 .post p {
   font-size: 0.8rem;
   font-weight: 400;
