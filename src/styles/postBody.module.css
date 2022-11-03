@@ -16,11 +16,20 @@
 }
 
 .stack p {
-  line-height: 1.4;
+  line-height: 2;
   color: var(--base-text);
 }
 
 .stack ul {
   padding: revert;
   list-style: revert;
+}
+
+.stack li {
+  color: var(--base-text);
+  line-height: 2;
+}
+
+.stack a:hover {
+  color: #874996;
 }
