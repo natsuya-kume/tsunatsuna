@@ -1,24 +1,16 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-    'next/core-web-vitals',
-    'google',
-    'prettier',
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'next/core-web-vitals', 'google', 'prettier', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['react', '@typescript-eslint', 'import'],
   rules: {
@@ -26,14 +18,12 @@ module.exports = {
     'react/display-name': 'off',
     semi: ['error', 'never'],
     'require-jsdoc': ['off'],
-    'import/order': [
-      'error',
-      {
-        'newlines-between': 'always', // グループ間に空白行が入る
-        alphabetize: {
-          order: 'asc', // アルファベットの昇順に並び替えられる
-        },
-      },
-    ],
-  },
-}
+    'import/order': ['error', {
+      'newlines-between': 'always',
+      // グループ間に空白行が入る
+      alphabetize: {
+        order: 'asc' // アルファベットの昇順に並び替えられる
+      }
+    }]
+  }
+};
