@@ -2,17 +2,19 @@ import React from 'react'
 
 type Props = {
   isTransform?: boolean | undefined
+  height?: number
+  width?: number
 }
 
 export const LeftArrowIcon: React.FC<Props> = React.memo(
-  ({ isTransform = false }) => {
+  ({ isTransform = false, height = 48, width = 48 }) => {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        width="48"
-        height="48"
+        width={width}
+        height={height}
         viewBox="0 0 48 48"
         transform={isTransform ? 'scale(-1,1)' : ''}
       >
