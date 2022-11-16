@@ -1,13 +1,18 @@
 import React from 'react'
 
-const BmoIcon = React.memo(() => {
+type Props = {
+  height?: number
+  width?: number
+}
+
+const BmoIcon: React.FC<Props> = React.memo(({ height = 48, width = 48 }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="48"
-      height="48"
+      width={width}
+      height={height}
       viewBox="0 0 48 48"
       //   style=" fill:#000000;"
     >

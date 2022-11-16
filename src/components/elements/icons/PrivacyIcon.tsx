@@ -4,10 +4,20 @@ type Props = {
   navChildstyle?: string | undefined
   linkText?: string | undefined
   linkTextStyle?: string | undefined
+
+  height?: number
+  width?: number
 }
 
 const PrivacyIcon: React.FC<Props> = React.memo(
-  ({ navListStyle, navChildstyle, linkText, linkTextStyle }) => {
+  ({
+    navListStyle,
+    navChildstyle,
+    linkText,
+    linkTextStyle,
+    width = 24,
+    height = 24,
+  }) => {
     return (
       <div className={navListStyle}>
         <div className={navChildstyle}>
@@ -15,8 +25,8 @@ const PrivacyIcon: React.FC<Props> = React.memo(
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="24"
-            height="24"
+            width={width}
+            height={height}
             viewBox="0 0 48 48"
           >
             <path

@@ -1,6 +1,7 @@
 .list {
   display: flex;
   gap: 1em;
+  align-items: center;
 }
 .navList {
   margin-top: 16px;
