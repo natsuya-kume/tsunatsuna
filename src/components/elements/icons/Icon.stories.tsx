@@ -53,7 +53,6 @@ export default {
 } as ComponentMeta<typeof ContactIcon>
 
 export const Default: ComponentStory<typeof ContactIcon> = () => <ContactIcon />
-export const Test: ComponentStory<typeof ContactIcon> = () => <ContactIcon />
 export const Size: ComponentStory<typeof ContactIcon> = () => {
   return (
     <div style={{ display: 'flex', gap: 10, alignItems: 'flex-end' }}>
