@@ -65,7 +65,7 @@ const Privacy = () => {
         </p>
         <h2 className={styles.title}>お問い合わせ</h2>
         <Divider style={{ marginTop: 0 }} />
-        <p>メールアドレス: tsuna.app.27@gmail.com</p>
+        <p>メールアドレス: prog.natsu.72@gmail.com</p>
       </PostBody>
     </div>
   )
