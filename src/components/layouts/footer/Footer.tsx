@@ -24,7 +24,7 @@ const Footer = () => {
             </Link>
           </div>
           <div>
-            <p className={styles.copyrightText}>©️ 2022 Natsuya</p>
+            <p className={styles.copyrightText}>©️ 2023 Natsuya Kume</p>
           </div>
         </div>
       </div>
