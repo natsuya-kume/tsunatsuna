@@ -6,7 +6,7 @@ import HomeIcon from '@/components/elements/icons/HomeIcon'
 import PrivacyIcon from '@/components/elements/icons/PrivacyIcon'
 import ProfileIcon from '@/components/elements/icons/ProfileIcon'
 import styles from '@/components/layouts/navigation/styles.module.css'
-import { useNav } from '@/hooks/useNav'
+import { useNav } from '@/components/layouts/navigation/useNav'
 import { pagesPath } from '@/lib/$path'
 
 export const Navigation = () => {
