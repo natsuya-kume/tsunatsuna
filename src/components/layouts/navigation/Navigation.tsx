@@ -5,11 +5,11 @@ import ContactIcon from '@/components/elements/icons/ContactIcon'
 import HomeIcon from '@/components/elements/icons/HomeIcon'
 import PrivacyIcon from '@/components/elements/icons/PrivacyIcon'
 import ProfileIcon from '@/components/elements/icons/ProfileIcon'
+import styles from '@/components/layouts/navigation/styles.module.css'
 import { useNav } from '@/hooks/useNav'
 import { pagesPath } from '@/lib/$path'
-import styles from '@/styles/nav.module.css'
 
-const Nav = () => {
+export const Navigation = () => {
   const { toggleNav, closeNav, navIsOpen } = useNav()
   return (
     <nav className={navIsOpen ? styles.open : styles.close}>
@@ -93,5 +93,3 @@ const Nav = () => {
     </nav>
   )
 }
-
-export default Nav

@@ -1,18 +1,17 @@
 import Container from '@/components/layouts/container/Container'
-import Logo from '@/components/layouts/logo/Logo'
-import Nav from '@/components/layouts/nav/Nav'
-import styles from '@/styles/header.module.css'
+import styles from '@/components/layouts/header/styles.module.css'
+import { Logo } from '@/components/layouts/logo/Logo'
+import { Navigation } from '@/components/layouts/navigation/Navigation'
 
-const Header = () => {
+export const Header = () => {
   return (
     <header>
       <Container large>
         <div className={styles.flexContainer}>
           <Logo />
-          <Nav />
+          <Navigation />
         </div>
       </Container>
     </header>
   )
 }
-export default Header
