@@ -3,8 +3,8 @@ import Typed from 'react-typed'
 
 import avatarImage from '@/assets/images/avatarImage_3.jpg'
 import { PostBody } from '@/components/layouts/postBody/PostBody'
+import styles from '@/features/home/components/styles.module.css'
 import { ROLES } from '@/features/home/const/ReactTyped'
-import styles from '@/styles/home.module.css'
 
 type Props = {
   title: string
