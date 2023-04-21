@@ -1,4 +1,4 @@
-import Divider from '@/components/layouts/divider/Divider'
+import { Divider } from '@/components/layouts/divider/Divider'
 import { PostBody } from '@/components/layouts/postBody/PostBody'
 import styles from '@/styles/privacy.module.css'
 const Privacy = () => {
