@@ -4,14 +4,41 @@
 }
 
 .text {
-  padding-top: calc(var(--display) * 0.5);
-  padding-bottom: calc(var(--display) * 0.7);
+  /* padding-top: calc(var(--display) * 0.5); */
+  /* padding-bottom: calc(var(--display) * 0.7); */
+  /* fle */
 }
 
-.title {
+.mainTitle {
   letter-spacing: 0.15em;
+  font-size: 50px;
 }
 
+.nameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  background-color: var(--c-brand-primary);
+  opacity: 0.8;
+  border-radius: 50px;
+}
+
+.description {
+  margin-top: 20px;
+  white-space: pre-wrap;
+  line-height: 25px;
+}
+
+.shortText {
+  margin-top: 30px;
+}
 .typeText {
   font-size: var(--heading2);
   color: var(--base-text);

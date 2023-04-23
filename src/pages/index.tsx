@@ -9,7 +9,7 @@ const HomePage: NextPage = () => {
     <Container>
       <Meta />
       <Home
-        title="TSUNA TSUNA PORTFOLIO"
+        title="I KEEP GROWING!!"
         subtitle="Let's take a look on my work."
         imageOn
       />

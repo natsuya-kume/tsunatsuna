@@ -1,0 +1,35 @@
+declare const styles: {
+  readonly "defaultTextStyle": string;
+  readonly "size-9": string;
+  readonly "size-10": string;
+  readonly "size-12": string;
+  readonly "size-13": string;
+  readonly "size-14": string;
+  readonly "size-16": string;
+  readonly "size-18": string;
+  readonly "size-20": string;
+  readonly "size-22": string;
+  readonly "size-24": string;
+  readonly "size-26": string;
+  readonly "size-28": string;
+  readonly "size-30": string;
+  readonly "size-32": string;
+  readonly "size-34": string;
+  readonly "size-50": string;
+  readonly "center": string;
+  readonly "start": string;
+  readonly "end": string;
+  readonly "inherit": string;
+  readonly "weight-400": string;
+  readonly "weight-500": string;
+  readonly "weight-700": string;
+  readonly "black": string;
+  readonly "white": string;
+  readonly "gray": string;
+  readonly "light-gray": string;
+  readonly "primary": string;
+  readonly "secondary": string;
+  readonly "tertiary": string;
+};
+export = styles;
+
