@@ -1,5 +1,4 @@
 :root {
-  --f-font-family: var(--noto-sans-jp), 'Noto Sans JP', sans-serif;
   --c-brand-primary: #2c3172;
   --c-brand-secondary: #1e31a5;
   --c-brand-tertiary: rgb(23, 26, 80);
@@ -9,13 +8,10 @@
   --c-natural-light-gray: #e1e1e1;
   --c-natural-white: #ffffff;
 
+  --f-font-family: var(--noto-sans-jp), 'Noto Sans JP', sans-serif;
   --f-font-regular: 400;
   --f-font-medium: 500;
   --f-font-bold: 700;
-
-  --base-text: #2c3172;
-  --link-text: #1e31a5;
-  --main-title: rgb(23, 26, 80);
 
   --white: #ffffff;
   --gray-10: #eeeeee;

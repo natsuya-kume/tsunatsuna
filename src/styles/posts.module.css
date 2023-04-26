@@ -22,7 +22,7 @@
   /* font-size: var(--small-heading3); */
   font-size: 1rem;
   font-weight: 700;
-  color: var(--base-text);
+  color: var(--c-brand-primary);
 }
 
 .post h2:hover {
@@ -32,7 +32,7 @@
 .post p {
   font-size: 0.8rem;
   font-weight: 400;
-  color: var(--base-text);
+  color: var(--c-brand-primary);
   letter-spacing: 0.1em;
   margin: 0.1em;
 }

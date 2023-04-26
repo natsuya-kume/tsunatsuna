@@ -27,11 +27,11 @@
   }
 
   .close .btn {
-    color: var(--base-text);
+    color: var(--c-brand-primary);
   }
 
   .open .btn {
-    color: var(--base-text);
+    color: var(--c-brand-primary);
   }
 
   .btn {
