@@ -1,8 +1,6 @@
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
-import styles from '../../../styles/nav.module.css'
-
 import BlogIcon from './BlogIcon'
 import BmoIcon from './BmoIcon'
 import ClockIcon from './ClockIcon'
@@ -67,7 +65,7 @@ export const Size: ComponentStory<typeof ContactIcon> = () => {
 }
 
 export const WithText: ComponentStory<typeof ContactIcon> = () => (
-  <ContactIcon linkText="Contact" navChildstyle={styles.list} />
+  <ContactIcon />
 )
 export const All: ComponentStory<typeof ContactIcon> = () => (
   <>
