@@ -9,6 +9,10 @@
   --c-natural-light-gray: #e1e1e1;
   --c-natural-white: #ffffff;
 
+  --f-font-regular: 400;
+  --f-font-medium: 500;
+  --f-font-bold: 700;
+
   --base-text: #2c3172;
   --link-text: #1e31a5;
   --main-title: rgb(23, 26, 80);
