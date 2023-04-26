@@ -12,7 +12,7 @@ export const Pagination = ({
   return (
     <ul className={styles.flexContainer}>
       {prevText && prevUrl && (
-        <li className={styles.prev}>
+        <li>
           <Link href={prevUrl}>
             <a className={styles.iconText}>
               <LeftArrowIcon />
