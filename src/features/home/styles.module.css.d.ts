@@ -1,6 +1,7 @@
 declare const styles: {
   readonly "flexContainer": string;
-  readonly "text": string;
+  readonly "leftContainer": string;
+  readonly "fadeInLeft": string;
   readonly "mainTitle": string;
   readonly "nameContainer": string;
   readonly "circle": string;
@@ -8,6 +9,7 @@ declare const styles: {
   readonly "shortText": string;
   readonly "typeText": string;
   readonly "avatar": string;
+  readonly "fadeInRight": string;
   readonly "avatarBoxFirst": string;
   readonly "avatarBoxSecond": string;
   readonly "avatarImage": string;

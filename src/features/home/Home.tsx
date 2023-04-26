@@ -14,7 +14,7 @@ type Props = {
 const Home = ({ title, subtitle, imageOn = false }: Props) => {
   return (
     <div className={styles.flexContainer}>
-      <div className={styles.text}>
+      <div className={styles.leftContainer}>
         <H1 color="primary" weight="700" size="size-50" className={mainTitle}>
           {title}
         </H1>
