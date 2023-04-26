@@ -6,18 +6,18 @@
 .stack h3 {
   --stack-space: 2em;
   font-weight: 700;
-  color: var(--main-title);
+  color: var(--c-brand-tertiary);
 }
 
 .stack h2 + *,
 .stack h3 + * {
   --stack-space: 0.8em;
-  color: var(--main-title);
+  color: var(--c-brand-tertiary);
 }
 
 .stack p {
   line-height: 2;
-  color: var(--base-text);
+  color: var(--c-brand-primary);
 }
 
 .stack ul {
@@ -26,7 +26,7 @@
 }
 
 .stack li {
-  color: var(--base-text);
+  color: var(--c-brand-primary);
   line-height: 2;
 }
 

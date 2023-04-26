@@ -3,9 +3,9 @@ import Link from 'next/link'
 import GithubIcon from '@/components/elements/icons/GithubIcon'
 import TwitterIcon from '@/components/elements/icons/TwitterIcon'
 import Container from '@/components/layouts/container/Container'
-import styles from '@/styles/footer.module.css'
+import styles from '@/components/layouts/footer/styles.module.css'
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <Container>
       <div className={styles.wrapper}>
@@ -31,4 +31,3 @@ const Footer = () => {
     </Container>
   )
 }
-export default Footer

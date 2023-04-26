@@ -5,11 +5,13 @@ import ContactIcon from '@/components/elements/icons/ContactIcon'
 import HomeIcon from '@/components/elements/icons/HomeIcon'
 import PrivacyIcon from '@/components/elements/icons/PrivacyIcon'
 import ProfileIcon from '@/components/elements/icons/ProfileIcon'
-import { useNav } from '@/hooks/useNav'
+import { Text } from '@/components/elements/typography/text/Text'
+import { NavLinkContainer } from '@/components/layouts/navigation/navLinkContainer/NavLinkContainer'
+import styles from '@/components/layouts/navigation/styles.module.css'
+import { useNav } from '@/components/layouts/navigation/useNav'
 import { pagesPath } from '@/lib/$path'
-import styles from '@/styles/nav.module.css'
 
-const Nav = () => {
+export const Navigation = () => {
   const { toggleNav, closeNav, navIsOpen } = useNav()
   return (
     <nav className={navIsOpen ? styles.open : styles.close}>
@@ -31,32 +33,32 @@ const Nav = () => {
       <div className={styles.list}>
         <Link href={pagesPath.$url()}>
           <div onClick={closeNav}>
-            <HomeIcon
-              navListStyle={styles.navList}
-              navChildstyle={styles.navChild}
-              linkText="Home"
-              linkTextStyle={styles.navChildText}
-            />
+            <NavLinkContainer>
+              <HomeIcon />
+              <Text color="primary" weight="700">
+                Home
+              </Text>
+            </NavLinkContainer>
           </div>
         </Link>
         <Link href={pagesPath.profile.$url()}>
           <div onClick={closeNav}>
-            <ProfileIcon
-              navListStyle={styles.navList}
-              navChildstyle={styles.navChild}
-              linkText="Profile"
-              linkTextStyle={styles.navChildText}
-            />
+            <NavLinkContainer>
+              <ProfileIcon />
+              <Text color="primary" weight="700">
+                Profile
+              </Text>
+            </NavLinkContainer>
           </div>
         </Link>
         <Link href={pagesPath.blog.$url()}>
           <div onClick={closeNav}>
-            <BlogIcon
-              navListStyle={styles.navList}
-              navChildstyle={styles.navChild}
-              linkText="Blog"
-              linkTextStyle={styles.navChildText}
-            />
+            <NavLinkContainer>
+              <BlogIcon />
+              <Text color="primary" weight="700">
+                Blog
+              </Text>
+            </NavLinkContainer>
           </div>
         </Link>
         {/* <Link href="/works">
@@ -71,27 +73,25 @@ const Nav = () => {
         </Link> */}
         <Link href="/contact">
           <div onClick={closeNav}>
-            <ContactIcon
-              navListStyle={styles.navList}
-              navChildstyle={styles.navChild}
-              linkText="Contact"
-              linkTextStyle={styles.navChildText}
-            />
+            <NavLinkContainer>
+              <ContactIcon />
+              <Text color="primary" weight="700">
+                Contact
+              </Text>
+            </NavLinkContainer>
           </div>
         </Link>
         <Link href={pagesPath.privacy.$url()}>
           <div onClick={closeNav}>
-            <PrivacyIcon
-              navListStyle={styles.navList}
-              navChildstyle={styles.navChild}
-              linkText="Privacy"
-              linkTextStyle={styles.navChildText}
-            />
+            <NavLinkContainer>
+              <PrivacyIcon />
+              <Text color="primary" weight="700">
+                Privacy
+              </Text>
+            </NavLinkContainer>
           </div>
         </Link>
       </div>
     </nav>
   )
 }
-
-export default Nav

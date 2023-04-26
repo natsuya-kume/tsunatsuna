@@ -44,7 +44,7 @@
 .categoryTagText {
   font-size: 0.8rem;
   font-weight: 400;
-  color: var(--base-text);
+  color: var(--c-brand-primary);
   letter-spacing: 0.1em;
   margin: 0.1em;
 }

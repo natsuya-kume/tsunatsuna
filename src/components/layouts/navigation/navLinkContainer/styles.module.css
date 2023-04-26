@@ -1,0 +1,56 @@
+.navList {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  animation: sway 1s ease-in-out 1 forwards;
+}
+.navChild {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #b4b6bf, -3px -3px 6px#fff;
+  background-color: #e7e8ef;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #d6d9ef;
+}
+
+@media (hover: hover) {
+  .navChild:hover {
+    background-color: #e7e8ef;
+    box-shadow: inset -3px -3px 6px #fff, inset 3px 3px 6px #b4b6bf;
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: scale(1, 1) translate(0, 0);
+  }
+  15% {
+    transform: scale(0.98, 0.9) translate(0, 5px);
+  }
+  30% {
+    transform: scale(1.02, 1) translate(0, 8px);
+  }
+  50% {
+    transform: scale(0.98, 1.05) translate(0, -8px);
+  }
+  70% {
+    transform: scale(1, 0.9) translate(0, 5px);
+  }
+  100% {
+    transform: scale(1, 1) translate(0, 0);
+  }
+  0%,
+  100% {
+    opacity: 1;
+  }
+}

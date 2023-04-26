@@ -1,9 +1,9 @@
-.default {
+.defaultContainer {
   width: 92%;
   max-width: 1152px;
   margin: 0 auto;
 }
-.large {
-  composes: default;
+.largeContainer {
+  composes: defaultContainer;
   max-width: 1280px;
 }

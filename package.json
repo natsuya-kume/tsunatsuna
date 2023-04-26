@@ -16,7 +16,8 @@
     "cy:run": "cypress run",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=bfc214300895"
+    "chromatic": "npx chromatic --project-token=bfc214300895",
+    "watch-css": "yarn tcm src -w"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
@@ -42,6 +43,7 @@
     "react-toastify": "^9.0.8",
     "react-typed": "^1.2.0",
     "sharp": "^0.31.1",
+    "typed-css-modules": "^0.7.2",
     "yup": "^0.32.11"
   },
   "devDependencies": {
