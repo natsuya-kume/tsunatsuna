@@ -27,6 +27,12 @@ export const pagesPath = {
       hash: url?.hash,
     }),
   },
+  matchShare: {
+    $url: (url?: { hash?: string }) => ({
+      pathname: '/matchShare' as const,
+      hash: url?.hash,
+    }),
+  },
   privacy: {
     $url: (url?: { hash?: string }) => ({
       pathname: '/privacy' as const,

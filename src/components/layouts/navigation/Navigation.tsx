@@ -5,6 +5,7 @@ import ContactIcon from '@/components/elements/icons/ContactIcon'
 import HomeIcon from '@/components/elements/icons/HomeIcon'
 import PrivacyIcon from '@/components/elements/icons/PrivacyIcon'
 import ProfileIcon from '@/components/elements/icons/ProfileIcon'
+import WorksIcon from '@/components/elements/icons/WorksIcon'
 import { Text } from '@/components/elements/typography/text/Text'
 import { NavLinkContainer } from '@/components/layouts/navigation/navLinkContainer/NavLinkContainer'
 import styles from '@/components/layouts/navigation/styles.module.css'
@@ -61,16 +62,16 @@ export const Navigation = () => {
             </NavLinkContainer>
           </div>
         </Link>
-        {/* <Link href="/works">
+        <Link href={pagesPath.matchShare.$url()}>
           <div onClick={closeNav}>
-            <WorksIcon
-              navListStyle={styles.navList}
-              navChildstyle={styles.navChild}
-              linkText="Works"
-              linkTextStyle={styles.navChildText}
-            />
+            <NavLinkContainer>
+              <WorksIcon />
+              <Text color="primary" weight="700">
+                マッチシェア
+              </Text>
+            </NavLinkContainer>
           </div>
-        </Link> */}
+        </Link>
         <Link href="/contact">
           <div onClick={closeNav}>
             <NavLinkContainer>
