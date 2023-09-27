@@ -82,5 +82,9 @@
     "typescript": "4.8.3"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "tsunatsuna@0.1.0"
+  "_id": "tsunatsuna@0.1.0",
+  "volta": {
+    "node": "16.18.0",
+    "yarn": "1.22.0"
+  }
 }
