@@ -84,7 +84,7 @@
   "readme": "ERROR: No README data found!",
   "_id": "tsunatsuna@0.1.0",
   "volta": {
-    "node": "16.18.0",
+    "node": "20.8.1",
     "yarn": "1.22.0"
   }
 }
