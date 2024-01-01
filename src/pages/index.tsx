@@ -6,8 +6,6 @@ import Meta from '@/components/layouts/meta/Meta'
 import Home from '@/features/home/Home'
 
 const HomePage: NextPage = () => {
-  console.log()
-
   useEffect(() => {
     if ('ReactNativeWebView' in window) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
